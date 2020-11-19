@@ -1,10 +1,6 @@
-function forLoop(array) {
+function forLoop(i) {
    for ( let i = 0; i < 25; i++) {
-     if (i === 1) {
-      return array.push(`I am ${i} strange loop.`)
-     } else {
-      return array.push(`I am ${i} strange loops.`)
-     }
+     return (`"I am ${i} strange loop${i === 0 ? '' : 's'}."`)
   }
 }
 
