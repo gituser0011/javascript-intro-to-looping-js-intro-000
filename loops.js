@@ -11,12 +11,22 @@ function forLoop(array) {
 }
 
 function whileLoop(n) {
-  let countdown = n;
+	while (n > 0) {
+		console.log(--n);
+	}
 
-    while (countdown > 0) {
-      console.log(--countdown)
-    }
-    return "done";
-  }
+	return 'done';
+}
 
 function doWhileLoop(num) {
+	var i = 0;
+
+	function incrementVariable() {
+		i = i + 1;
+    return i;
+	}
+
+  do {
+    console.log("I run once regardless.");
+  } while (incrementVariable() < num);
+}
